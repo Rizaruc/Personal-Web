@@ -1,0 +1,250 @@
+/* gaya.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Itim', cursive;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Home Section */
+.article-home {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(to right, #1e90ff, #87cefa);
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.article-home-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.article-home-h31 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-title h2 {
+    text-align: center;
+    color: #ff6347;
+    margin-bottom: 2rem;
+}
+
+.article-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.article-about-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article-about-desk h1 {
+    font-size: 1.8rem;
+    color: #1e90ff;
+}
+
+.article-about-desk p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Skill Section */
+.article-skill {
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.article-skill-heading h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.article-skill-heading h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-color: #1e90ff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.article-skill-desk-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-skill-desk p {
+    flex: 1;
+    font-size: 1rem;
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+.article-skill-img img {
+    width: 70px;
+    margin: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-skill-img img:hover {
+    transform: scale(1.2);
+}
+
+/* Certificate Section */
+.article-certificate {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.article-certificate h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.article-certificate h2 {
+    text-align: center;
+    color: #ff6347;
+    margin-bottom: 2rem;
+}
+
+.article-certificate-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.article-certificate-img img {
+    width: 200%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-certificate-img img:hover {
+    transform: scale(1.1);
+}
+
+.article-certificate-img figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+footer h1 {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-about {
+        flex-direction: column;
+    }
+
+    .article-skill-desk-img {
+        flex-direction: column;
+    }
+
+    .article-certificate-img {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
